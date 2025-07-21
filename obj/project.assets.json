@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\Desktop\\projects\\NumberToWords\\NumberToWords.csproj",
-      "projectName": "NumberToWords",
-      "projectPath": "Z:\\Desktop\\projects\\NumberToWords\\NumberToWords.csproj",
+      "projectUniqueName": "Z:\\Desktop\\projects\\NumbersToWords\\NumbersToWords.csproj",
+      "projectName": "NumbersToWords",
+      "projectPath": "Z:\\Desktop\\projects\\NumbersToWords\\NumbersToWords.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "Z:\\Desktop\\projects\\NumberToWords\\obj\\",
+      "outputPath": "Z:\\Desktop\\projects\\NumbersToWords\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
