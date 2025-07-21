@@ -1,0 +1,241 @@
+/* Number to Words Converter - Styles */
+
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --success-color: #059669;
+    --error-color: #dc2626;
+    --bg-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+}
+
+main {
+    flex: 1;
+}
+
+.converter-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+#numberInput {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1.125rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#numberInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.help-text {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+#convertButton {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#convertButton:hover:not(:disabled) {
+    background-color: var(--primary-hover);
+}
+
+#convertButton:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+#convertButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.result-section,
+.error-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.result-section {
+    background-color: #f0fdf4;
+    border: 1px solid #86efac;
+}
+
+.result-section h2 {
+    color: var(--success-color);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.result-display {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #065f46;
+    word-wrap: break-word;
+    transition: opacity 0.3s;
+}
+
+.error-section {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+}
+
+.error-display {
+    color: var(--error-color);
+    font-weight: 500;
+}
+
+.examples-section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.examples-section h3 {
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.examples-list {
+    list-style: none;
+}
+
+.examples-list li {
+    padding: 10px 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.examples-list li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-top: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .converter-card {
+        padding: 25px;
+    }
+    
+    .examples-section {
+        padding: 20px;
+    }
+    
+    .examples-list li {
+        font-size: 0.8rem;
+    }
+}

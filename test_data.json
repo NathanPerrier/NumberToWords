@@ -1,0 +1,91 @@
+{
+  "testCases": [
+    {
+      "input": "123.45",
+      "expected": "ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS",
+      "description": "Standard positive number with cents"
+    },
+    {
+      "input": "1000",
+      "expected": "ONE THOUSAND DOLLARS",
+      "description": "Round thousand"
+    },
+    {
+      "input": "0",
+      "expected": "ZERO DOLLARS",
+      "description": "Zero value"
+    },
+    {
+      "input": "0.01",
+      "expected": "ZERO DOLLARS AND ONE CENT",
+      "description": "One cent"
+    },
+    {
+      "input": "0.99",
+      "expected": "ZERO DOLLARS AND NINETY-NINE CENTS",
+      "description": "Ninety-nine cents"
+    },
+    {
+      "input": "-50",
+      "expected": "NEGATIVE FIFTY DOLLARS",
+      "description": "Negative whole number"
+    },
+    {
+      "input": "-123.45",
+      "expected": "NEGATIVE ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS",
+      "description": "Negative number with cents"
+    },
+    {
+      "input": "999999999.99",
+      "expected": "NINE HUNDRED AND NINETY-NINE MILLION NINE HUNDRED AND NINETY-NINE THOUSAND NINE HUNDRED AND NINETY-NINE DOLLARS AND NINETY-NINE CENTS",
+      "description": "Maximum allowed value"
+    },
+    {
+      "input": "-999999999.99",
+      "expected": "NEGATIVE NINE HUNDRED AND NINETY-NINE MILLION NINE HUNDRED AND NINETY-NINE THOUSAND NINE HUNDRED AND NINETY-NINE DOLLARS AND NINETY-NINE CENTS",
+      "description": "Minimum allowed value"
+    },
+    {
+      "input": "12.34",
+      "expected": "TWELVE DOLLARS AND THIRTY-FOUR CENTS",
+      "description": "Teen number with cents"
+    },
+    {
+      "input": "100.00",
+      "expected": "ONE HUNDRED DOLLARS",
+      "description": "Round hundred"
+    },
+    {
+      "input": "1234567.89",
+      "expected": "ONE MILLION TWO HUNDRED AND THIRTY-FOUR THOUSAND FIVE HUNDRED AND SIXTY-SEVEN DOLLARS AND EIGHTY-NINE CENTS",
+      "description": "Complex large number"
+    }
+  ],
+  "invalidCases": [
+    {
+      "input": "",
+      "expectedError": "Please provide a valid number",
+      "description": "Empty input"
+    },
+    {
+      "input": "abc",
+      "expectedError": "Invalid format",
+      "description": "Non-numeric input"
+    },
+    {
+      "input": "123.456",
+      "expectedError": "Invalid format",
+      "description": "More than 2 decimal places"
+    },
+    {
+      "input": "1000000000",
+      "expectedError": "Number must be between -999,999,999.99 and 999,999,999.99",
+      "description": "Number too large"
+    },
+    {
+      "input": "12.3.4",
+      "expectedError": "Invalid format",
+      "description": "Multiple decimal points"
+    }
+  ]
+}

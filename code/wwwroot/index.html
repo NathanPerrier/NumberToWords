@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Words Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Number to Words Converter</h1>
+            <p class="subtitle">Convert currency amounts to written form</p>
+        </header>
+
+        <main>
+            <div class="converter-card">
+                <form id="converterForm">
+                    <div class="input-group">
+                        <label for="numberInput">Enter Amount:</label>
+                        <input 
+                            type="text" 
+                            id="numberInput" 
+                            placeholder="e.g., 123.45"
+                            autocomplete="off"
+                            aria-describedby="inputHelp"
+                        />
+                        <small id="inputHelp" class="help-text">
+                            Enter a number between -999,999,999.99 and 999,999,999.99
+                        </small>
+                    </div>
+
+                    <button type="submit" id="convertButton">Convert to Words</button>
+                </form>
+
+                <div id="resultSection" class="result-section hidden">
+                    <h2>Result:</h2>
+                    <div id="resultDisplay" class="result-display"></div>
+                </div>
+
+                <div id="errorSection" class="error-section hidden">
+                    <div id="errorDisplay" class="error-display"></div>
+                </div>
+            </div>
+
+            <div class="examples-section">
+                <h3>Examples:</h3>
+                <ul class="examples-list">
+                    <li>123.45 ’ ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS</li>
+                    <li>1000 ’ ONE THOUSAND DOLLARS</li>
+                    <li>0.99 ’ ZERO DOLLARS AND NINETY-NINE CENTS</li>
+                    <li>-50.25 ’ NEGATIVE FIFTY DOLLARS AND TWENTY-FIVE CENTS</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Number to Words Converter API</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
