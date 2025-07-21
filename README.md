@@ -2,6 +2,10 @@
 
 A web application that converts numerical currency values into their written word representation.
 
+<div align="center">
+  <img src="preview.png" height="500px" alt="Preview">
+</div>
+
 ## Features
 
 - Converts numbers to words in currency format
