@@ -24,7 +24,7 @@ A web application that converts numerical currency values into their written wor
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/NathanPerrier/NumberToWords.git
 cd NumberToWords
 ```
 
