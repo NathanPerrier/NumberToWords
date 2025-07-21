@@ -1,0 +1,6 @@
+@NumberToWords_HostAddress = http://localhost:5249
+
+GET {{NumberToWords_HostAddress}}/conversion/
+Accept: application/json
+
+###
