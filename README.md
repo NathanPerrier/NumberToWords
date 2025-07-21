@@ -168,14 +168,3 @@ dotnet --version
 2. Verify the correct URL and port
 3. Check browser console for JavaScript errors
 
-## Contributing
-
-Please ensure all changes:
-1. Follow the existing code style
-2. Include appropriate error handling
-3. Update documentation as needed
-4. Pass all test cases in TEST_PLAN.md
-
-## License
-
-This project is created as part of an engineering assessment.
