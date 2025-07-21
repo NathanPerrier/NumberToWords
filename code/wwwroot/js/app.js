@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resultDisplay.style.opacity = '0';
         setTimeout(() => {
             resultDisplay.style.opacity = '1';
-        }, 10);
+        }, 100);
     }
 
     function hideResult() {
