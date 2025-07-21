@@ -4,7 +4,7 @@ A web application that converts numerical currency values into their written wor
 
 ## Features
 
-- Converts numbers to words in USD currency format
+- Converts numbers to words in currency format
 - Supports values from -999,999,999.99 to 999,999,999.99
 - Clean, responsive web interface
 - RESTful API endpoint
