@@ -28,11 +28,6 @@ This document outlines the design decisions and architectural approach for the N
 - **Browser Compatibility**: Works in all modern browsers without transpilation
 - **Maintainability**: Easy to understand and modify without framework knowledge
 
-**Alternatives Considered:**
-- **React**: Overkill for a single-form application
-- **Angular**: Too heavy for simple requirements
-- **Vue.js**: Good option but adds unnecessary complexity
-
 ## 2. Architecture Design
 
 ### API Design Pattern: RESTful Web API
